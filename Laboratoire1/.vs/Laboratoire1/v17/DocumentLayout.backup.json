@@ -64,7 +64,7 @@
               "RelativeDocumentMoniker": "t_labyrinthe.c",
               "ToolTip": "C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\t_labyrinthe.c",
               "RelativeToolTip": "t_labyrinthe.c",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAAGYAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAqwCUAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2026-02-13T18:53:39.49Z",
               "EditorCaption": ""
@@ -77,7 +77,7 @@
               "RelativeDocumentMoniker": "t_labyrinthe.h",
               "ToolTip": "C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\t_labyrinthe.h",
               "RelativeToolTip": "t_labyrinthe.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-02-13T18:53:01.023Z",
               "EditorCaption": ""
@@ -92,8 +92,7 @@
               "RelativeToolTip": "affichage.c",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2026-02-12T18:50:13.163Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-12T18:50:13.163Z"
             },
             {
               "$type": "Document",
@@ -129,8 +128,7 @@
               "RelativeToolTip": "test_pile.c",
               "ViewState": "AgIAABIAAAAAAAAAAAAAAF4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2026-02-13T19:03:05.679Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-13T19:03:05.679Z"
             },
             {
               "$type": "Document",
@@ -142,8 +140,7 @@
               "RelativeToolTip": "affichage.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-02-13T18:52:25.405Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-13T18:52:25.405Z"
             },
             {
               "$type": "Document",
@@ -179,8 +176,7 @@
               "RelativeToolTip": "t_pile_Wilson.h",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAACEAAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-02-12T16:31:52.218Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-12T16:31:52.218Z"
             },
             {
               "$type": "Document",

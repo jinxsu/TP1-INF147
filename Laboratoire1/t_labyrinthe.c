@@ -25,12 +25,12 @@ void init_labyrinthe(t_labyrinthe lab)
 	for(int i=0;i<(NB_LIG * NB_COL + 1);i++) {
 
 		k = mt_randi(NB_COL * NB_LIG - 1);
-		//k = 0; //Test k a position fixe
+		//k = 4; //Test k a position fixe
 		lig = 2 * (k % NB_LIG) + 1;	//ligne de k
-		col = 2 * (k / NB_COL) + 1; //colone de k
+		col = 2 * (k / NB_LIG) + 1; //colone de k
 		lab[lig][col] = LIBRE; //met position initial a libre
 		direction= mt_randi(4);
-		//direction = EST; //test avec direction fixe
+		//direction = SUD; //test avec direction fixe
 		lon = mt_randi(max(NB_COL, NB_LIG));
 		//lon = 1; //test avec longeur fixe
 
@@ -39,7 +39,7 @@ void init_labyrinthe(t_labyrinthe lab)
 			k = obtenir_vosine(k, direction);
 			if (k != -1) {
 				lig = 2 * (k % NB_LIG) + 1;
-				col = 2 * (k / NB_COL) + 1;
+				col = 2 * (k / NB_LIG) + 1;
 				lab[lig][col] = LIBRE;
 				switch (direction) {
 				case NORD:
@@ -52,7 +52,7 @@ void init_labyrinthe(t_labyrinthe lab)
 					lab[lig + 1][col] = LIBRE;
 					break;
 				case EST:
-					lab[lig -1][col] = LIBRE;
+					lab[lig - 1][col] = LIBRE;
 					break;
 				}
 			}
