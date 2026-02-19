@@ -22,7 +22,7 @@ int obtenir_pos(const t_pile_Wilson pile, t_element elem)
 }
 
 /* Concaténation des éléments d’une pile sur une autre pile.
-On reçoit une pile existante et le poinetur d'une autre pile "p_src" dont le
+On reçoit une pile existante et le pointeur d'une autre pile "p_src" dont le
 contenu sera empilée sur la première en respectant l'ordre LIFO.
 Retour de 1 si la concaténation a été faite entièrement
 et de 0 si la seconde pile ne peut être totalement empilée dans la première
@@ -32,7 +32,7 @@ int concatener_piles(t_pile_Wilson p_dest, const t_pile_Wilson p_src)
 	//adding elements of p_src to p_dest in the same order as they are in p_src
 	for(int i=0; i < p_src->taille; i++) {
 		if(p_src->items[i] != 0) {
-			if(!push_pile(p_dest, p_src->items[i])) {
+			if(!push_pile(p_dest, p_src->items[p_src->taille-i])) {
 				return 1;
 			}
 		}

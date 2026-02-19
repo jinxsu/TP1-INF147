@@ -1,4 +1,3 @@
-﻿  t_labyrinthe.c
-D:\GitHub\TP1-INF147\Laboratoire1\t_labyrinthe.c(36,8): warning C4013: 'obtenir_vosine' undefined; assuming extern returning int
-D:\GitHub\TP1-INF147\Laboratoire1\t_labyrinthe.c(24,15): warning C4101: 'voisin': unreferenced local variable
+﻿  test_pile.c
+D:\GitHub\TP1-INF147\Laboratoire1\test_pile.c(87,2): warning C4013: 'mt_srand' undefined; assuming extern returning int
   Laboratoire1.vcxproj -> D:\GitHub\TP1-INF147\Laboratoire1\x64\Debug\Laboratoire1.exe

@@ -17,4 +17,4 @@ enum direction { NORD=1, SUD=2, OUEST=3, EST=4 };
 void remplir_de_murs(t_labyrinthe lab);
 void init_labyrinthe(t_labyrinthe lab);
 void afficher_labyrinthe(const t_labyrinthe lab);
-#endif // T_LABYRINTHE_H
+#endif //T_LABYRINTHE_H

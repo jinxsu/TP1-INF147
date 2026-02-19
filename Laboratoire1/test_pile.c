@@ -1,7 +1,7 @@
-/* TEST_PILES.C
+ï»¿/* TEST_PILES.C
    Fichier pour tester les 3 fonctions du module "t_pile_Wilson" sur une pile d'entiers.
 
-   Auteur  : Eric Thé
+   Auteur  : Eric ThÃ©
 */
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
@@ -20,7 +20,7 @@ int main(void)
 	t_pile p1, p2;    //les deux piles pour les tests
 	t_element el;     //un entier
 
-	/* Création des deux piles: */
+	/* CrÃ©ation des deux piles: */
 	p1 = init_pile(50);
 	p2 = init_pile(7);
 
@@ -28,7 +28,7 @@ int main(void)
 	printf("\nTaille de p1 = %d", get_max_pile(&p1));
 	printf("\nTaille de p2 = %d", get_max_pile(&p2));
 
-	/* Ajouter un élément à p1 : */
+	/* Ajouter un Ã©lÃ©ment Ã  p1 : */
 	assert(push_pile(&p1, 10));
 	assert(get_nb_elements(&p1) == 1);
 	printf("\nPush de 10: il y a %d valeurs dans p1 -> ", get_nb_elements(&p1));
@@ -36,7 +36,7 @@ int main(void)
 
 	/* Remplir la pile p2 avec valeurs successives */
 	el = 0;
-	while (push_pile(&p2, el)) {    //push_pile() jusqu'à que la pile soit pleine
+	while (push_pile(&p2, el)) {    //push_pile() jusqu'Ã  que la pile soit pleine
 		el++;
 	}
 	assert(get_nb_elements(&p2) == get_max_pile(&p2));   //elle est pleine?
@@ -50,10 +50,10 @@ int main(void)
 	printf("\nLe '6' se trouve a la position %d dans p2", obtenir_pos(&p2, 6));
 	printf("\nLe '9' se trouve a la position %d dans p2", obtenir_pos(&p2, 9));
 
-	/* On tente d'ajouter un autre élément à p2 qui est PLEINE */
+	/* On tente d'ajouter un autre Ã©lÃ©ment Ã  p2 qui est PLEINE */
 	assert(push_pile(&p2, 1234) == 0);
 
-	/* On tente de concatener p2 à la pile p1 */
+	/* On tente de concatener p2 Ã  la pile p1 */
 	printf("\n\nConcatenation de p2 a p1 = %d", concatener_piles(&p1, &p2));
 	assert(get_nb_elements(&p1) == get_nb_elements(&p2) + 1);
 
@@ -64,12 +64,12 @@ int main(void)
 	printf("\nPush de -66: il y a %d valeurs dans p1 -> ", get_nb_elements(&p1));
 	afficher_pile(&p1);
 
-	/* On tente de tronquer p1 de -2 éléments */
+	/* On tente de tronquer p1 de -2 Ã©lÃ©ments */
 	assert(tronquer_pile(&p1, get_nb_elements(&p1) - 2));
 	printf("\nTronquer p1: il y a %d valeurs dans p1 -> ", get_nb_elements(&p1));
 	afficher_pile(&p1);
 
-	/* On vide la pile p1 un élément à la fois */
+	/* On vide la pile p1 un Ã©lÃ©ment Ã  la fois */
 	while (get_nb_elements(&p1)) {
 		printf("\nResultat du pop p1 = %d", pop_pile(&p1, &el));
 		printf("  et valeur = %d", el);
@@ -83,9 +83,13 @@ int main(void)
 #endif
 #if TEST_LABYRINTHE
 	t_labyrinthe lab;
-	printf("\nTESTS UNITAIRES DU LABYRINTHE:");
+	//intialiser le gï¿½nï¿½rateur de nombres pseudo-alï¿½atoires
+	mt_srand(12345);
+	printf("\nTESTS UNITAIRES DU LABYRINTHE:\n");
+	printf("\nTest de la fonction de remplissage \n");
 	remplir_de_murs(lab);
 	afficher_labyrinthe(lab);
+	printf("\nTest de la generation du semi-labyrinthe: \n");
 	init_labyrinthe(lab);
 	afficher_labyrinthe(lab);
 #endif
@@ -93,6 +97,6 @@ int main(void)
 	//On termine avec le standard... HIT ANY KEY
 	printf("\n");	system("pause");
 
-	return EXIT_SUCCESS;	//et ÇA c'est un 0 avec une cravate...
+	return EXIT_SUCCESS;	//et Ã‡A c'est un 0 avec une cravate...
 }
 /*-----------------------------------------------------------------*/
