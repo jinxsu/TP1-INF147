@@ -32,6 +32,10 @@ void init_labyrinthe(t_labyrinthe lab)
 	int direction;
 	int lon;
 
+	//Seed changes based on processor clock, thus seed will be random
+	unsigned long seed;
+	seed = mt_srandSys();
+
 	for(int i=0;i<(NB_LIG * NB_COL + 1);i++) {
 
 		k = mt_randf(0,NB_COL * NB_LIG - 1); //random position
