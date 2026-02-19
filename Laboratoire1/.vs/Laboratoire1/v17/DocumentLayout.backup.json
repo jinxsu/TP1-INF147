@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\t_labyrinthe.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|solutionrelative:t_labyrinthe.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\t_labyrinthe.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|solutionrelative:t_labyrinthe.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\t_labyrinthe.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|solutionrelative:t_labyrinthe.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\test_pile.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -54,24 +54,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "t_labyrinthe.c",
               "DocumentMoniker": "C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\t_labyrinthe.c",
               "RelativeDocumentMoniker": "t_labyrinthe.c",
               "ToolTip": "C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\t_labyrinthe.c",
               "RelativeToolTip": "t_labyrinthe.c",
-              "ViewState": "AgIAABkAAAAAAAAAAAAqwCUAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAB0AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2026-02-13T18:53:39.49Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "t_labyrinthe.h",
               "DocumentMoniker": "C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\t_labyrinthe.h",
               "RelativeDocumentMoniker": "t_labyrinthe.h",
