@@ -1,5 +1,7 @@
 ﻿  t_labyrinthe.c
 C:\Users\samtc\Documents\GitHub\TP1-INF147\Laboratoire1\t_labyrinthe.c(37,7): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-C:\Users\samtc\Documents\GitHub\TP1-INF147\Laboratoire1\t_labyrinthe.c(64,9): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-C:\Users\samtc\Documents\GitHub\TP1-INF147\Laboratoire1\t_labyrinthe.c(70,8): warning C4013: 'obtenir_vosine' undefined; assuming extern returning int
+C:\Users\samtc\Documents\GitHub\TP1-INF147\Laboratoire1\t_labyrinthe.c(49,9): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\samtc\Documents\GitHub\TP1-INF147\Laboratoire1\t_labyrinthe.c(55,8): warning C4013: 'obtenir_vosine' undefined; assuming extern returning int
+  test_pile.c
+  Generating Code...
   Laboratoire1.vcxproj -> C:\Users\samtc\Documents\GitHub\TP1-INF147\Laboratoire1\x64\Debug\Laboratoire1.exe

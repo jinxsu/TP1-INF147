@@ -44,22 +44,7 @@ void init_labyrinthe(t_labyrinthe lab)
 
 		//The initial position and next position need
 		//to be assigned before finding neighbour
-		lab[lig][col] = LIBRE; //met position initial a libre
-		//Put next position LIBRE based on direction
-		switch (direction) {
-		case NORD:
-			lab[lig][col - 1] = LIBRE;
-			break;
-		case SUD:
-			lab[lig][col + 1] = LIBRE;
-			break;
-		case OUEST:
-			lab[lig - 1][col] = LIBRE;
-			break;
-		case EST:
-			lab[lig + 1][col] = LIBRE;
-			break;
-		}
+		pos_set(direction, lig, col, lab);
 
 		lon = mt_randf(2,max(NB_COL, NB_LIG)); //random lenght
 		//lon = 1; //test avec longeur fixe
@@ -72,26 +57,31 @@ void init_labyrinthe(t_labyrinthe lab)
 			if (k != -1) {
 				lig = 2 * (k % NB_LIG) + 1; //ligne de k
 				col = 2 * (k / NB_LIG) + 1; //colone de k
-				lab[lig][col] = LIBRE; //Set next position LIBRE
-				//Set the position after the k position to LIBRE
-				switch (direction) {
-				case NORD:
-					lab[lig][col - 1] = LIBRE;
-					break;
-				case SUD:
-					lab[lig][col + 1] = LIBRE;
-					break;
-				case OUEST:
-					lab[lig - 1][col] = LIBRE;
-					break;
-				case EST:
-					lab[lig + 1][col] = LIBRE;
-					break;
-				}
+				pos_set(direction, lig, col, lab);
 			}
 		}
 	}
 	
+}
+
+/* Function to se the current and next space to LIBRE to create corridors */
+void pos_set(int dir, int lig, int col, t_labyrinthe lab) {
+	lab[lig][col] = LIBRE; //Set current position to LIBRE
+	//Set the next space after the k position to LIBRE
+	switch (dir) {
+	case NORD:
+		lab[lig][col - 1] = LIBRE;
+		break;
+	case SUD:
+		lab[lig][col + 1] = LIBRE;
+		break;
+	case OUEST:
+		lab[lig - 1][col] = LIBRE;
+		break;
+	case EST:
+		lab[lig + 1][col] = LIBRE;
+		break;
+	}
 }
 
 void afficher_labyrinthe(const t_labyrinthe lab)
