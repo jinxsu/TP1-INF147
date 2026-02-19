@@ -20,16 +20,47 @@ void init_labyrinthe(t_labyrinthe lab)
 	int lig;
 	int col;
 	int direction;
+	int lon;
 
-	for(int i=0;i<(NB_LIG*NB_COL+1);i++) {
+	for(int i=0;i<(NB_LIG * NB_COL + 1);i++) {
 
 		k = mt_randi(NB_COL * NB_LIG - 1);
-		lig = 2 * (k / NB_COL + 1);
-		col = 2 * (k % NB_COL + 1);
-		k = LIBRE;
+		//k = 0; //Test k a position fixe
+		lig = 2 * (k % NB_LIG) + 1;	//ligne de k
+		col = 2 * (k / NB_COL) + 1; //colone de k
+		lab[lig][col] = LIBRE; //met position initial a libre
 		direction= mt_randi(4);
+		//direction = EST; //test avec direction fixe
+		lon = mt_randi(max(NB_COL, NB_LIG));
+		//lon = 1; //test avec longeur fixe
+
+		//find next position and set to LIBRE
+		for (int j = 0; j < lon && k != -1; j++) {
+			k = obtenir_vosine(k, direction);
+			if (k != -1) {
+				lig = 2 * (k % NB_LIG) + 1;
+				col = 2 * (k / NB_COL) + 1;
+				lab[lig][col] = LIBRE;
+				switch (direction) {
+				case NORD:
+					lab[lig][col + 1] = LIBRE;
+					break;
+				case SUD:
+					lab[lig][col - 1] = LIBRE;
+					break;
+				case OUEST:
+					lab[lig + 1][col] = LIBRE;
+					break;
+				case EST:
+					lab[lig -1][col] = LIBRE;
+					break;
+				}
+			}
+		}
+
+
 		k = obtenir_vosine(k, direction);
-		k = LIBRE;
+		//k = LIBRE;
 	}
 	
 }
@@ -37,33 +68,48 @@ void init_labyrinthe(t_labyrinthe lab)
 void afficher_labyrinthe(const t_labyrinthe lab)
 {
 	//print the maze in the center of the console depending on the number of columns
-	for(int i=0;i<(NB_LIG+1);i++) {
-		for(int j=0;j<(NB_COL+1);j++) {
-			if(lab[i][j] == MUR) {
-				printf("%c");
+	printf("\n");
+	for(int i=0;i<(2*NB_COL+1);i++) {
+		for (int k = 0;k < 55 - NB_COL;k++)
+			printf(" ");
+		for(int j=0;j<(2*NB_LIG+1);j++) {
+			if(lab[j][i] == LIBRE) {
+				printf("  ");
 			} else {
-				printf(" ");
+				printf("%c%c", 0xDB, 0xDB);
 			}
 		}
 		printf("\n");
 	}
 
+
+
+
 }
 int obtenir_vosine(int k ,int direction)
 {
+	
 	switch (direction)
 	{
 	case NORD:
-		return k-2*NB_COL-1;
+		if (k < NB_LIG)
+			return -1;
+		return k - NB_LIG;
 		break;
 	case SUD:
-		return k+2*NB_COL+1;
+		if ((k+NB_LIG) > (NB_LIG*NB_COL-1))
+			return -1;
+		return k + NB_LIG;
 		break;
 	case OUEST:
-		return k-2;
+		if (k % NB_LIG == 0)
+			return -1;
+		return k-1;
 		break;
 	case EST:
-		return k+2;
+		if (k % NB_LIG == (NB_LIG - 1))
+			return -1;
+		return k+1;
 		break;
 	default:
 		return -1;
