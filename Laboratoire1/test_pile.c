@@ -11,8 +11,8 @@
 #include "t_labyrinthe.h"
 #include "t_pile_Wilson.h"
 #include "affichage.h"
-#define TEST_PILE 1
-#define TEST_LABYRINTHE 0
+#define TEST_PILE 0
+#define TEST_LABYRINTHE 1
 
 int main(void)
 {
@@ -83,8 +83,10 @@ int main(void)
 #endif
 #if TEST_LABYRINTHE
 	t_labyrinthe lab;
-	init_labyrinthe(lab);
 	printf("\nTESTS UNITAIRES DU LABYRINTHE:");
+	remplir_de_murs(lab);
+	afficher_labyrinthe(lab);
+	init_labyrinthe(lab);
 	afficher_labyrinthe(lab);
 #endif
 
