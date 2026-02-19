@@ -6,8 +6,8 @@
 
 #ifndef T_LABYRINTHE_H
 #define T_LABYRINTHE_H
-#define NB_LIG 6
-#define NB_COL 6
+#define NB_LIG 8
+#define NB_COL 5
 #define MUR 1
 #define LIBRE 0
 #define MAX(a,b) (a>b) ? a : b
