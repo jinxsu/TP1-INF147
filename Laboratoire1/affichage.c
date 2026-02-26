@@ -6,12 +6,13 @@
 void afficher_pile(const t_pile* pile)
 {
 	printf("[");
-	for(int i=0; i < pile->taille; i++) {
-		if(pile->items[i] != 0) {
-			printf("%d", pile->items[i]);
-			if(i < pile->taille - 1) {
-				printf(", ");
-			}
+	for(int i=0; i <= pile->sommet; i++) {
+
+		printf("%d ", pile->items[i]);
+
+		if(i<pile->sommet) {
+
+			printf(", ");
 		}
 	}
 	printf("]");

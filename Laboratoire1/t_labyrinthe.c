@@ -33,9 +33,9 @@ void init_labyrinthe(t_labyrinthe lab)
 	remplir_de_murs(lab);
 
 	//Initier le g�n�rateur de nombres pseudo-al�atoires
-	mt_srand(12345); // Initialiser avec une graine fixe pour des résultats reproductibles
+	mt_srandSys();// initialisation du g�n�rateur de nombres pseudo-al�atoires avec une valeur d�termin�e par l'horloge interne de la machine
 
-	//creer des passages en creusant des cellules et leurs voisines dans une direction choisie au hasard
+	//creer des passages en creusant des cellules
 	for (int i = 0;i < NB_LIG * NB_COL; i++)
 	{
 		//choisir une cellule, une direction et une longueur de passage au hasard
@@ -53,12 +53,15 @@ void init_labyrinthe(t_labyrinthe lab)
 		// creuser le passage en avançant dans la direction choisie pour la longueur choisie
 		for (int j = 0; j < longueur; j++) {
 
-			voisine = obtenir_vosine(k_copie, direction); // obtenir la voisine de k dans la direction choisie
-			
-			if (voisine == -1) break; // si la voisine est hors limites, arrêter le passage et passer à la cellule suivante
+			// obtenir la voisine de k dans la direction choisie
+			voisine = obtenir_vosine(k_copie, direction); 
 
-			lig_voisine = 2 * (voisine / NB_COL) + 1; // calculer la ligne de la voisine
-			col_voisine = 2 * (voisine % NB_COL) + 1; // calculer la colonne de la voisine
+			// si la voisine est hors limites, arrêter le passage et passer à la cellule suivante
+			if (voisine == -1) break; 
+
+			// déterminer les coordonnées de la voisine dans le labyrinthe
+			lig_voisine = 2 * (voisine / NB_COL) + 1; 
+			col_voisine = 2 * (voisine % NB_COL) + 1;
 			
 			lab[lig_voisine][col_voisine] = LIBRE; // creuser la voisine
 			lab[(lig + lig_voisine) / 2][(col + col_voisine) / 2] = LIBRE; // creuser le mur entre k_copie et sa voisine

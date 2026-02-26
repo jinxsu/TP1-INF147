@@ -13,7 +13,7 @@
 retourne une pile initialisée à vide de cette taille. */
 t_pile init_pile(unsigned int taille)
 {
-	return (t_pile) { NULL, -1, taille };
+	return (t_pile) {(int*)malloc(taille*sizeof(int)), -1, taille };
 	
 }
 
@@ -21,21 +21,17 @@ t_pile init_pile(unsigned int taille)
 Cette pile ne devra plus être utilisé avant d’avoir été réinitialisée. */
 void liberer_pile(t_pile* pile)
 {
-	for(int i=0; i < pile->taille; i++) {
-		pop_pile(pile, NULL);
-	}
+	free(pile->items);
+	pile->items = NULL;
+	pile->sommet = -1;
+	pile->taille = 0;
+	
 }
 
 /* Obtenir le nombre d'éléments actuellement dans la pile reçue en paramètre. */
 unsigned int get_nb_elements(const t_pile* pile)
 {
-	int count = 0;
-	for(int i=0; i < pile->taille; i++) {
-		if(pile->items[i] != 0) {
-			count++;
-		}
-	}
-	return count;
+	return pile->sommet + 1;
 }
 
 /* Obtenir la capacité maximale de la pile reçue en paramètre. */
@@ -54,10 +50,9 @@ int get_element(const t_pile* pile, unsigned int position, t_element* elem)
 	if(position > pile->sommet || position < 0) {
 		return 0;
 	}
-	
 	*elem = pile->items[position];
 	return 1;
-	
+		
 	
 }
 
@@ -65,7 +60,7 @@ int get_element(const t_pile* pile, unsigned int position, t_element* elem)
 On retourne 0 si la valeur "elem" n'y est pas et 1 si elle est présente. */
 int present_pile(const t_pile* pile, t_element elem)
 {
-	for(int i=0; i < pile->taille; i++) {
+	for(int i=0; i < pile->sommet; i++) {
 		if(pile->items[i] == elem) {
 			return 1;
 		}
@@ -79,18 +74,12 @@ On reçoit le pointeur d'une pile existante et la référence ou copier l'élément e
 Retour de 0 si la pile est vide -- seul cas possible. Sinon 1 (extraction réussie). */
 int pop_pile(t_pile* p, t_element* dest)
 {
-	//check if stack is empty
-	if (p->sommet == -1) {
+	if(p->sommet == -1) {
 		return 0;
 	}
-	//delete element from stack
-	if(dest != NULL) {
-		p->sommet++;
-		*dest = p->items[p->sommet-1];
-		return 1;
-	}
-	
-	
+	*dest = p->items[p->sommet];
+	p->sommet--;
+	return 1;
 	
 }
 
@@ -99,15 +88,12 @@ On reçoit le pointeur d'une pile et la valeur "src" à insérer.
 Retour de 0 si la pile est pleine -- seul cas possible. Sinon 1 (insertion réussie). */
 int push_pile(t_pile* p, t_element src)
 {
-	//check if stack is full
-	if(p->sommet == p->taille - 1) {
+	if(p->sommet==p->taille-1) {
 		return 0;
 	}
-	//add element to stack
 	p->sommet++;
 	p->items[p->sommet] = src;
-	return 1;
-	
+	return 1;	
 	
 }
 
