@@ -13,8 +13,11 @@
 /* Retourne la position de "elem" dans la pile ou -1 si absent. */
 int obtenir_pos(const t_pile_Wilson pile, t_element elem)
 {
-	for(int i=0; i <= pile->sommet; i++) {
-		if(pile->items[i] == elem) {
+	t_element element;
+	for(int i=0; i < get_nb_elements(pile); i++) {
+
+		get_element(pile, i, &element);
+		if(element == elem) {
 			return i;
 		}
 	}
@@ -29,9 +32,11 @@ et de 0 si la seconde pile ne peut être totalement empilée dans la première
 par manque de place, -- seul cas possible. */
 int concatener_piles(t_pile_Wilson p_dest, const t_pile_Wilson p_src)
 {
+	t_element elem;
 	//adding elements of p_src to p_dest in the same order as they are in p_src
-	for (int i = 0; i <= p_src->sommet; i++) {
-		if(push_pile(p_dest, p_src->items[i]) == 0) {
+	for (int i = 0; i < get_nb_elements(p_src); i++) {
+		get_element(p_src, i, &elem);
+		if(push_pile(p_dest, elem) == 0) {
 			return 0;
 		}
 	}

@@ -44,10 +44,10 @@
     <ClCompile Include="t_labyrinthe.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="test_pile.c">
+    <ClCompile Include="mtwister.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mtwister.c">
+    <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

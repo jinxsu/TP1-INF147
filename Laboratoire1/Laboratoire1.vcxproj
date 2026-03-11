@@ -131,8 +131,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="affichage.c" />
+    <ClCompile Include="main.c" />
     <ClCompile Include="mtwister.c" />
-    <ClCompile Include="test_pile.c" />
     <ClCompile Include="t_labyrinthe.c" />
     <ClCompile Include="t_pile.c" />
     <ClCompile Include="t_pile_Wilson.c" />
