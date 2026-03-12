@@ -17,7 +17,7 @@
 /* Affiche le contenu de la pile à l'écran. */
 void afficher_pile(const t_pile* pile);
 void afficher_labyrinthe(const t_labyrinthe* lab);
-int valider_entier(const char* str, int min, int max);
+int valider_entier(const char* msg_sollic, int min, int max);
 
 
 #endif // AFFICHAGE_H

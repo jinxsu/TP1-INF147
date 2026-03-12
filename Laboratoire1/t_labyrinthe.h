@@ -10,14 +10,12 @@
 #include <stdio.h>
 #include<stdlib.h>
 #include "t_pile_Wilson.h"
-#define NB_LIG 4
-#define NB_COL 4
 #define MUR 1
 #define LIBRE 0
 
 
-typedef int t_semi_labyrinthe[2*NB_LIG+1][2*NB_COL+1];
 
+//structure pour représenter le labyrinthe dans la partie 2
 typedef struct 
 {
 	int** matrice;
@@ -26,10 +24,8 @@ typedef struct
 	int nb_positions;
 
 }t_labyrinthe;
-enum direction { NORD=1, SUD=2, OUEST=3, EST=4 };
 
-void remplir_de_murs(t_semi_labyrinthe lab);
-void init_semi_labyrinthe(t_semi_labyrinthe lab);
+enum direction { NORD=1, SUD=2, OUEST=3, EST=4 };
 
 //Partie 2
 t_labyrinthe init_labyrinthe(int nb_lig, int nb_col);

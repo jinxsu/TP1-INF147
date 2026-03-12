@@ -60,12 +60,12 @@ void afficher_labyrinthe(const t_labyrinthe* lab)
 	}
 }
 
-int valider_entier(const char* str, int min, int max)
+int valider_entier(const char* msg_sollic, int min, int max)
 {
 	int valeur;
 	do
 	{
-		printf("%s", str);
+		printf("%s", msg_sollic);
 		scanf("%d", &valeur);
 	} while (valeur<min||valeur>max);
 	return valeur;

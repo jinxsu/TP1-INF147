@@ -9,87 +9,21 @@
 #include "mtwister.h"
 
 
-#define LONGUEUR_MAX (NB_LIG > NB_COL) ? NB_LIG : NB_COL // longueur maximale d'un passage
-//fonction privée
+// prototypes des fonctions privées
 static int obtenir_vosine(int k, int direction, int nb_lig, int nb_col);
 static int ajouter_chemin_Wilson(t_pile_Wilson chemins_W, int nb_lig, int nb_col);
 static int choix_v_chemin_Wilson(t_pile_Wilson chemins_W, int nb_val);
 static int choisir_voisin(int k, int nb_lig, int nb_col);
 
 
+/**************************************************************************
+*							FONCTIONS PUBLIQUES							  *
+***************************************************************************/
 
-void remplir_de_murs(t_semi_labyrinthe lab)
-{
-	//remplir le labyrinthe de murs
-	for(int i=0;i<(2*NB_LIG+1);i++) {
-
-		for(int j=0;j<(2*NB_COL+1);j++) {
-
-			lab[i][j] = MUR;
-		}
-	}
-}
-
-void init_semi_labyrinthe(t_semi_labyrinthe lab)
-{
-	int k;
-	int direction;
-	int longueur;
-	int voisine;
-	int lig, col;
-	int lig_voisine, col_voisine;
-
-
-	//Initialiser le tableau du labyrinthe en le remplissant de murs
-	remplir_de_murs(lab);
-
-	//Initier le g�n�rateur de nombres pseudo-al�atoires
-	mt_srandSys();// initialisation du g�n�rateur de nombres pseudo-al�atoires avec une valeur d�termin�e par l'horloge interne de la machine
-
-	//creer des passages en creusant des cellules
-	for (int i = 0;i < NB_LIG * NB_COL; i++)
-	{
-		//choisir une cellule, une direction et une longueur de passage au hasard
-		k = mt_randi(NB_LIG * NB_COL)-1;
-		direction = mt_randi(4); 
-		longueur = mt_randi(LONGUEUR_MAX-1)+1; 
-		
-		//determiner les coordonnées de la cellule k dans le labyrinthe
-		lig = 2 * (k / NB_COL) + 1; 
-		col = 2 * (k % NB_COL) + 1; 
-	
-		lab[lig][col] = LIBRE; // creuser la cellule k
-		int k_copie = k; // copier k pour le parcours du passage
-
-		// creuser le passage en avançant dans la direction choisie pour la longueur choisie
-		for (int j = 0; j < longueur; j++) {
-
-			// obtenir la voisine de k dans la direction choisie
-			voisine = obtenir_vosine(k_copie, direction, NB_LIG, NB_COL);
-
-			// si la voisine est hors limites, arrêter le passage et passer à la cellule suivante
-			if (voisine == -1) break; 
-
-			// déterminer les coordonnées de la voisine dans le labyrinthe
-			lig_voisine = 2 * (voisine / NB_COL) + 1; 
-			col_voisine = 2 * (voisine % NB_COL) + 1;
-			
-			lab[lig_voisine][col_voisine] = LIBRE; // creuser la voisine
-			lab[(lig + lig_voisine) / 2][(col + col_voisine) / 2] = LIBRE; // creuser le mur entre k_copie et sa voisine
-
-			// mettre à jour les coordonnées de k_copie pour le prochain pas du passage
-			lig = lig_voisine;
-			col = col_voisine;
-			k_copie = voisine;
-			
-		}
-
-	}
-	
-}
-
+//initialiser le labyrinthe de la partie 2 en remplissant la matrice de murs
 t_labyrinthe init_labyrinthe(int nb_lig, int nb_col)
 {
+	
 	t_labyrinthe laby;
 	laby.nb_lig = nb_lig;
 	laby.nb_col = nb_col;
@@ -108,6 +42,7 @@ t_labyrinthe init_labyrinthe(int nb_lig, int nb_col)
 	return laby;
 }
 
+//créer les piles de Wilson pour le labyrinthe de taille nb_lig x nb_col
 void creation_des_piles_Wilson(t_pile* chemins_W, t_pile* longueurs_W, int nb_lig, int nb_col)
 {
 	int v = mt_randi(nb_lig * nb_col) - 1; //choisir une cellule au hasard pour commencer le labyrinthe
@@ -115,26 +50,35 @@ void creation_des_piles_Wilson(t_pile* chemins_W, t_pile* longueurs_W, int nb_li
 	push_pile(longueurs_W, 1); //ajouter la longueur du chemin de Wilson (1) à la pile des longueurs de Wilson
 	int nb_accumule = 1; //initialiser le nombre de cellules déjà accumulées dans le labyrinthe à 1
 
+	//tant que le nombre de cellules accumulées dans le labyrinthe est inférieur au nombre
+	//total de cellules, continuer à ajouter des chemins de Wilson
 	while (nb_accumule<nb_lig*nb_col)
 	{
+		//ajouter un chemin de Wilson à la pile des chemins de Wilson et obtenir sa longueur
 		int taille = ajouter_chemin_Wilson(chemins_W, nb_lig, nb_col);
-		push_pile(longueurs_W, taille); //ajouter la longueur du chemin de Wilson ajouté à la pile des longueurs de Wilson
-		nb_accumule += taille-1; //mettre à jour le nombre de cellules déjà accumulées dans le labyrinthe
+		//ajouter la longueur du chemin de Wilson ajouté à la pile des longueurs de Wilson
+		push_pile(longueurs_W, taille);
+		//mettre à jour le nombre de cellules déjà accumulées dans le labyrinthe
+		nb_accumule += taille-1;
 	}
 }
 
+//ajouter un chemin de Wilson à la pile des chemins de Wilson et retourner sa longueur
 void ouvrir_chemins(t_labyrinthe* laby, t_pile* chemins_W, t_pile* longueurs_W)
 {
+	
 	int taille;
 	int k, k_prec;
 	int lig, col;
 	int new_lig, new_col;
+
 	while (get_nb_elements(chemins_W) != 0) {
 
 		pop_pile(longueurs_W, &taille); //obtenir la longueur du chemin de Wilson à ouvrir
 		pop_pile(chemins_W, &k); //obtenir le chemin de Wilson à ouvrir
 
-		lig = 2 * (k / laby->nb_col) + 1; //déterminer les coordonnées de la cellule k dans le labyrinthe
+		//déterminer les coordonnées de la cellule k dans le labyrinthe
+		lig = 2 * (k / laby->nb_col) + 1; 
 		col = 2 * (k % laby->nb_col) + 1;
 		laby->matrice[lig][col] = LIBRE; //creuser la cellule k dans le labyrinthe
 		k_prec = k;
@@ -142,9 +86,11 @@ void ouvrir_chemins(t_labyrinthe* laby, t_pile* chemins_W, t_pile* longueurs_W)
 		for(int i = 1; i < taille; i++) {
 
 			pop_pile(chemins_W, &k); //obtenir la prochaine cellule du chemin de Wilson à ouvrir
-			new_lig = 2 * (k / laby->nb_col) + 1; //déterminer les coordonnées de la cellule k dans le labyrinthe
+			//déterminer les coordonnées de la cellule k dans le labyrinthe
+			new_lig = 2 * (k / laby->nb_col) + 1; 
 			new_col = 2 * (k % laby->nb_col) + 1;
 
+			//creuser le mur entre k_prec et k en fonction de leur position relative dans le labyrinthe
 			if (k == k_prec - laby->nb_col)
 			{
 				laby->matrice[lig - 1][col] = LIBRE; //creuser le mur entre k_prec et k
@@ -167,12 +113,14 @@ void ouvrir_chemins(t_labyrinthe* laby, t_pile* chemins_W, t_pile* longueurs_W)
 
 			laby->matrice[new_lig][new_col] = LIBRE; //creuser la cellule k dans le labyrinthe
 			k_prec = k; //mettre à jour k_prec pour le prochain pas du chemin de Wilson
-			lig = new_lig; //mettre à jour les coordonnées de k_prec pour le prochain pas du chemin de Wilson
+			//mettre à jour les coordonnées de k_prec pour le prochain pas du chemin de Wilson
+			lig = new_lig; 
 			col = new_col;
 		}
 	}
 }
 
+//creuser une porte dans le mur du contour no_contour du labyrinthe
 void creuser_porte(t_labyrinthe* laby, int no_contour)
 {
 	int lig, col;
@@ -180,6 +128,7 @@ void creuser_porte(t_labyrinthe* laby, int no_contour)
 	int porte_creusee = 0;
 
 	while(!porte_creusee) {
+
 		switch (no_contour)
 		{
 		case NORD:
@@ -217,6 +166,7 @@ void creuser_porte(t_labyrinthe* laby, int no_contour)
 	}
 }
 
+//libérer la mémoire allouée pour le labyrinthe et réinitialiser ses champs
 void detruire_labyrinthe(t_labyrinthe* laby)
 {
 	int lignes = 2 * laby->nb_lig + 1;
@@ -231,9 +181,14 @@ void detruire_labyrinthe(t_labyrinthe* laby)
 }
 
 
+/**************************************************************************
+*							FONCTIONS PRIVÉES							  *
+***************************************************************************/
+
+//calculer la position du voisin de k dans la direction donnée
 int obtenir_vosine(int k ,int direction,int nb_lig, int nb_col)
 {
-	//calculer la position du voisin de k dans la direction donnée
+	
 	int lig = k/nb_col;
 	int col = k%nb_col;
 
@@ -256,24 +211,27 @@ int obtenir_vosine(int k ,int direction,int nb_lig, int nb_col)
 	
 }
 
+//ajouter un chemin de Wilson à la pile des chemins de Wilson et retourner sa longueur
 int ajouter_chemin_Wilson(t_pile_Wilson chemins_W, int nb_lig, int nb_col)
 {
+	//si la pile des chemins de Wilson est vide, retourner 0
 	if (get_nb_elements(chemins_W) == 0) {
 		return 0;
 	}
-
+	
 	t_pile p_chemin = init_pile(nb_lig * nb_col);
 	t_pile_Wilson p_chemin_W = &p_chemin;
 	t_pile_Wilson chemins_W_copie = chemins_W;
-
-	
 	int v = choix_v_chemin_Wilson(chemins_W, nb_lig * nb_col);
+	
 	push_pile(p_chemin_W, v);
 
 	int chemin_complet = 0;
 	int sommet, voisin, position;
 
+	//tant que le chemin de Wilson n'est pas complet, continuer à choisir des voisins et à les ajouter au chemin
 	while (!chemin_complet) {
+
 		get_element(p_chemin_W, get_nb_elements(p_chemin_W) - 1, &sommet);
 		voisin = choisir_voisin(sommet, nb_lig, nb_col);
 		position = obtenir_pos(p_chemin_W, voisin);
@@ -290,15 +248,13 @@ int ajouter_chemin_Wilson(t_pile_Wilson chemins_W, int nb_lig, int nb_col)
 			push_pile(p_chemin_W, voisin);
 
 		}
-
-
 	}
 	
 	int taille_chemin = get_nb_elements(p_chemin_W);
 	liberer_pile(&p_chemin);
 	return taille_chemin;
 }
-
+//choisir une cellule au hasard qui n'est pas déjà dans la pile des chemins de Wilson et retourner sa valeur
 int choix_v_chemin_Wilson(t_pile_Wilson chemins_W, int nb_val)
 {
 	int v;
@@ -311,7 +267,7 @@ int choix_v_chemin_Wilson(t_pile_Wilson chemins_W, int nb_val)
 
 	return v;
 }
-
+//choisir un voisin au hasard de la cellule k qui est dans les limites du labyrinthe et retourner sa valeur
 int choisir_voisin(int k, int nb_lig, int nb_col)
 {
 	int direction;

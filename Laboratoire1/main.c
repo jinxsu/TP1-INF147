@@ -9,6 +9,7 @@
 /*=========================================================*/
 //Permet de désactiver certains warnings du compilateur 
 #define _CRT_SECURE_NO_WARNINGS 
+#define DEBUG 0
 
 // Librairies usuelles à inclure 
 #include<stdio.h>
@@ -16,11 +17,7 @@
 #include "affichage.h"
 #include "mtwister.h"
 
-/*=========================================================*/
-/*                  LES CONSTANTES                         */
-/*=========================================================*/
 
-/*=========================================================*/
 /*=========================================================*/
 //Programme principal: fonction principale qui retourne un entier (int)
 int main(void)
@@ -35,11 +32,13 @@ int main(void)
     
 	creation_des_piles_Wilson(&chemins_W, &longueurs_W, nb_lig, nb_col); //créer les piles de Wilson pour le labyrinthe de taille nb_lig x nb_col
 
-	printf("\n Contenu de la pile des chemins de Wilson : ");
+#if DEBUG
+	printf("\n\n Contenu de la pile des chemins de Wilson : ");
 	afficher_pile(&chemins_W); //afficher le contenu de la pile chemins_W
 
-	printf("\n Contenu de la pile des longueurs de Wilson : ");
+	printf("\n\n Contenu de la pile des longueurs de Wilson : ");
 	afficher_pile(&longueurs_W); //afficher le contenu de la pile longueurs_W
+#endif
 
 	//erreur commence ici
 	t_labyrinthe laby = init_labyrinthe(nb_lig, nb_col); //initialiser le labyrinthe de taille nb_lig x nb_col
@@ -54,7 +53,7 @@ int main(void)
 	} while (contour1 == contour2);
 	creuser_porte(&laby, contour2); //creuser une porte dans le second contour choisi
 
-	printf("\n Labyrinthe généré de taille %d x %d : \n",nb_lig,nb_col);
+	printf("\n\n Labyrinthe de taille %d x %d : \n",nb_lig,nb_col);
 	afficher_labyrinthe(&laby); //afficher le labyrinthe généré
 
 	liberer_pile(&chemins_W); //libérer la pile des chemins de Wilson
