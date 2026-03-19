@@ -19,8 +19,8 @@
 typedef struct 
 {
 	int** matrice;
-	int nb_lig;
-	int nb_col;
+	int M;
+	int N;
 	int nb_positions;
 
 }t_labyrinthe;
@@ -28,10 +28,10 @@ typedef struct
 enum direction { NORD=1, SUD=2, OUEST=3, EST=4 };
 
 //Partie 2
-t_labyrinthe init_labyrinthe(int nb_lig, int nb_col);
-void creation_des_piles_Wilson(t_pile* chemins_W, t_pile* longueurs_W,int nb_lig, int nb_col);
-void ouvrir_chemins(t_labyrinthe* laby, t_pile* chemins_W, t_pile* longueurs_W);
-void creuser_porte(t_labyrinthe* laby, int no_contour);
-void detruire_labyrinthe(t_labyrinthe* laby);
+t_labyrinthe init_laby(int M, int N);
+void etape_des_2piles(t_pile* chemins_W, t_pile* longueurs_W,int M, int N);
+void etape_ouverture_chemins(t_labyrinthe* laby, t_pile* chemins_W, t_pile* longueurs_W);
+void creuser_une_porte(t_labyrinthe* laby, int no_contour);
+void detruire_laby(t_labyrinthe* laby);
 
 #endif //T_LABYRINTHE_H

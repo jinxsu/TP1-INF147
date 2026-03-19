@@ -1,49 +1,49 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\GitHub\\TP1-INF147\\Laboratoire1\\",
+  "WorkspaceRootPath": "C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|D:\\GitHub\\TP1-INF147\\Laboratoire1\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|solutionrelative:main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|D:\\GitHub\\TP1-INF147\\Laboratoire1\\t_pile.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|solutionrelative:t_pile.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|D:\\GitHub\\TP1-INF147\\Laboratoire1\\t_pile_Wilson.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|solutionrelative:t_pile_Wilson.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|D:\\GitHub\\TP1-INF147\\Laboratoire1\\t_pile_Wilson.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|solutionrelative:t_pile_Wilson.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|D:\\GitHub\\TP1-INF147\\Laboratoire1\\t_labyrinthe.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\t_labyrinthe.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|solutionrelative:t_labyrinthe.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|D:\\GitHub\\TP1-INF147\\Laboratoire1\\t_pile.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|solutionrelative:t_pile.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|solutionrelative:main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|D:\\GitHub\\TP1-INF147\\Laboratoire1\\affichage.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|solutionrelative:affichage.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\t_pile.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|solutionrelative:t_pile.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|D:\\GitHub\\TP1-INF147\\Laboratoire1\\affichage.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|solutionrelative:affichage.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|D:\\GitHub\\TP1-INF147\\Laboratoire1\\t_labyrinthe.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\t_labyrinthe.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|solutionrelative:t_labyrinthe.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|D:\\GitHub\\TP1-INF147\\Laboratoire1\\mtwister.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\t_pile_Wilson.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|solutionrelative:t_pile_Wilson.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\t_pile_Wilson.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|solutionrelative:t_pile_Wilson.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\t_pile.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|solutionrelative:t_pile.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\affichage.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|solutionrelative:affichage.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\affichage.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|solutionrelative:affichage.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\mtwister.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|solutionrelative:mtwister.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|D:\\GitHub\\TP1-INF147\\Laboratoire1\\mtwister.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\mtwister.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4407DECF-EC71-47D2-84D3-02B7F1738A1A}|Laboratoire1.vcxproj|solutionrelative:mtwister.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -54,144 +54,145 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "t_labyrinthe.c",
-              "DocumentMoniker": "D:\\GitHub\\TP1-INF147\\Laboratoire1\\t_labyrinthe.c",
-              "RelativeDocumentMoniker": "t_labyrinthe.c",
-              "ToolTip": "D:\\GitHub\\TP1-INF147\\Laboratoire1\\t_labyrinthe.c",
-              "RelativeToolTip": "t_labyrinthe.c",
-              "ViewState": "AgIAAO8AAAAAAAAAAAAAAK4AAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2026-02-13T18:53:39.49Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "t_pile_Wilson.h",
-              "DocumentMoniker": "D:\\GitHub\\TP1-INF147\\Laboratoire1\\t_pile_Wilson.h",
-              "RelativeDocumentMoniker": "t_pile_Wilson.h",
-              "ToolTip": "D:\\GitHub\\TP1-INF147\\Laboratoire1\\t_pile_Wilson.h",
-              "RelativeToolTip": "t_pile_Wilson.h",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAuwBYAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-02-12T16:31:52.218Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "t_pile_Wilson.c",
-              "DocumentMoniker": "D:\\GitHub\\TP1-INF147\\Laboratoire1\\t_pile_Wilson.c",
-              "RelativeDocumentMoniker": "t_pile_Wilson.c",
-              "ToolTip": "D:\\GitHub\\TP1-INF147\\Laboratoire1\\t_pile_Wilson.c",
-              "RelativeToolTip": "t_pile_Wilson.c",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAgwCwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2026-02-12T16:13:50.739Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "t_pile.c",
-              "DocumentMoniker": "D:\\GitHub\\TP1-INF147\\Laboratoire1\\t_pile.c",
-              "RelativeDocumentMoniker": "t_pile.c",
-              "ToolTip": "D:\\GitHub\\TP1-INF147\\Laboratoire1\\t_pile.c",
-              "RelativeToolTip": "t_pile.c",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAGUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2026-02-12T16:13:30.839Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "main.c",
-              "DocumentMoniker": "D:\\GitHub\\TP1-INF147\\Laboratoire1\\main.c",
-              "RelativeDocumentMoniker": "main.c",
-              "ToolTip": "D:\\GitHub\\TP1-INF147\\Laboratoire1\\main.c*",
-              "RelativeToolTip": "main.c*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2026-03-11T15:58:32.35Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "mtwister.h",
-              "DocumentMoniker": "D:\\GitHub\\TP1-INF147\\Laboratoire1\\mtwister.h",
-              "RelativeDocumentMoniker": "mtwister.h",
-              "ToolTip": "D:\\GitHub\\TP1-INF147\\Laboratoire1\\mtwister.h",
-              "RelativeToolTip": "mtwister.h",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAANIAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-02-13T21:12:55.156Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "t_pile.h",
-              "DocumentMoniker": "D:\\GitHub\\TP1-INF147\\Laboratoire1\\t_pile.h",
-              "RelativeDocumentMoniker": "t_pile.h",
-              "ToolTip": "D:\\GitHub\\TP1-INF147\\Laboratoire1\\t_pile.h",
-              "RelativeToolTip": "t_pile.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAABWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-02-12T16:33:10.13Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "t_labyrinthe.h",
-              "DocumentMoniker": "D:\\GitHub\\TP1-INF147\\Laboratoire1\\t_labyrinthe.h",
-              "RelativeDocumentMoniker": "t_labyrinthe.h",
-              "ToolTip": "D:\\GitHub\\TP1-INF147\\Laboratoire1\\t_labyrinthe.h",
-              "RelativeToolTip": "t_labyrinthe.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-02-13T18:53:01.023Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "affichage.h",
-              "DocumentMoniker": "D:\\GitHub\\TP1-INF147\\Laboratoire1\\affichage.h",
-              "RelativeDocumentMoniker": "affichage.h",
-              "ToolTip": "D:\\GitHub\\TP1-INF147\\Laboratoire1\\affichage.h",
-              "RelativeToolTip": "affichage.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-02-13T18:52:25.405Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "affichage.c",
-              "DocumentMoniker": "D:\\GitHub\\TP1-INF147\\Laboratoire1\\affichage.c",
+              "DocumentMoniker": "C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\affichage.c",
               "RelativeDocumentMoniker": "affichage.c",
-              "ToolTip": "D:\\GitHub\\TP1-INF147\\Laboratoire1\\affichage.c",
+              "ToolTip": "C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\affichage.c",
               "RelativeToolTip": "affichage.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2026-02-12T18:50:13.163Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "t_labyrinthe.c",
+              "DocumentMoniker": "C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\t_labyrinthe.c",
+              "RelativeDocumentMoniker": "t_labyrinthe.c",
+              "ToolTip": "C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\t_labyrinthe.c",
+              "RelativeToolTip": "t_labyrinthe.c",
+              "ViewState": "AgIAALYAAAAAAAAAAAAQwLwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-02-13T18:53:39.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "main.c",
+              "DocumentMoniker": "C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\main.c",
+              "RelativeDocumentMoniker": "main.c",
+              "ToolTip": "C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\main.c",
+              "RelativeToolTip": "main.c",
+              "ViewState": "AgIAACgAAAAAAAAAAAAQwC4AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-03-11T15:58:32.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "t_pile_Wilson.c",
+              "DocumentMoniker": "C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\t_pile_Wilson.c",
+              "RelativeDocumentMoniker": "t_pile_Wilson.c",
+              "ToolTip": "C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\t_pile_Wilson.c",
+              "RelativeToolTip": "t_pile_Wilson.c",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-02-12T16:13:50.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "t_pile_Wilson.h",
+              "DocumentMoniker": "C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\t_pile_Wilson.h",
+              "RelativeDocumentMoniker": "t_pile_Wilson.h",
+              "ToolTip": "C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\t_pile_Wilson.h",
+              "RelativeToolTip": "t_pile_Wilson.h",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-02-12T16:31:52.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "t_labyrinthe.h",
+              "DocumentMoniker": "C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\t_labyrinthe.h",
+              "RelativeDocumentMoniker": "t_labyrinthe.h",
+              "ToolTip": "C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\t_labyrinthe.h",
+              "RelativeToolTip": "t_labyrinthe.h",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAjwCEAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-02-13T18:53:01.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "t_pile.c",
+              "DocumentMoniker": "C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\t_pile.c",
+              "RelativeDocumentMoniker": "t_pile.c",
+              "ToolTip": "C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\t_pile.c",
+              "RelativeToolTip": "t_pile.c",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-02-12T16:13:30.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "affichage.h",
+              "DocumentMoniker": "C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\affichage.h",
+              "RelativeDocumentMoniker": "affichage.h",
+              "ToolTip": "C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\affichage.h",
+              "RelativeToolTip": "affichage.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-02-13T18:52:25.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "t_pile.h",
+              "DocumentMoniker": "C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\t_pile.h",
+              "RelativeDocumentMoniker": "t_pile.h",
+              "ToolTip": "C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\t_pile.h",
+              "RelativeToolTip": "t_pile.h",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAjwB8AAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-02-12T16:33:10.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "mtwister.h",
+              "DocumentMoniker": "C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\mtwister.h",
+              "RelativeDocumentMoniker": "mtwister.h",
+              "ToolTip": "C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\mtwister.h",
+              "RelativeToolTip": "mtwister.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANIAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-02-13T21:12:55.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 10,
               "Title": "mtwister.c",
-              "DocumentMoniker": "D:\\GitHub\\TP1-INF147\\Laboratoire1\\mtwister.c",
+              "DocumentMoniker": "C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\mtwister.c",
               "RelativeDocumentMoniker": "mtwister.c",
-              "ToolTip": "D:\\GitHub\\TP1-INF147\\Laboratoire1\\mtwister.c",
+              "ToolTip": "C:\\Users\\samtc\\Documents\\GitHub\\TP1-INF147\\Laboratoire1\\mtwister.c",
               "RelativeToolTip": "mtwister.c",
               "ViewState": "AgIAADwBAAAAAAAAAAAAAGABAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",

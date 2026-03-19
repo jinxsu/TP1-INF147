@@ -31,7 +31,7 @@ void afficher_pile(const t_pile* pile)
 void afficher_labyrinthe(const t_labyrinthe* lab)
 {
 	int largeur_ecran = 80;
-	int largeur_labyrinthe = (2 * lab->nb_col + 1) * 2;
+	int largeur_labyrinthe = (2 * lab->N + 1) * 2;
 	int marge = (largeur_ecran - largeur_labyrinthe) / 2;
 	if(marge<0) {
 		marge = 0; // éviter une marge négative si le labyrinthe est plus large que l'écran
@@ -39,7 +39,7 @@ void afficher_labyrinthe(const t_labyrinthe* lab)
 
 	//Afficher le labyrinthe
 	printf("\n");
-	for (int i = 0; i < 2 * lab->nb_lig + 1; i++) {
+	for (int i = 0; i < 2 * lab->M + 1; i++) {
 
 		// Afficher la marge
 		for (int m = 0; m < marge; m++) {
@@ -47,7 +47,7 @@ void afficher_labyrinthe(const t_labyrinthe* lab)
 		}
 
 		// Afficher les caractères du labyrinthe
-		for (int j = 0; j < 2 * lab->nb_col + 1; j++)
+		for (int j = 0; j < 2 * lab->N + 1; j++)
 		{
 			if (lab->matrice[i][j] == MUR) {
 				printf("%c%c", 219, 219);// caractère plein pour les murs

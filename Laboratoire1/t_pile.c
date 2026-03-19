@@ -21,6 +21,8 @@ t_pile init_pile(unsigned int taille)
 Cette pile ne devra plus être utilisé avant d’avoir été réinitialisée. */
 void liberer_pile(t_pile* pile)
 {
+	if (pile->items == NULL)
+		return;
 	free(pile->items);
 	pile->items = NULL;
 	pile->sommet = -1;
